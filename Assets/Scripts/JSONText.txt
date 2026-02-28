@@ -1,0 +1,6 @@
+{
+  "frames": [
+    { "left_elbow": 0.95, "right_elbow": 0.85, "left_arm": 0.75, "right_arm": 0.80, "left_knee": 0.95, "right_knee": 0.95, "left_thigh": 0.95, "right_thigh": 0.95 },
+    { "left_elbow": 0.35, "right_elbow": 0.85, "left_arm": 0.75, "right_arm": 0.80, "left_knee": 0.95, "right_knee": 0.95, "left_thigh": 0.95, "right_thigh": 0.95 }
+   ]
+}

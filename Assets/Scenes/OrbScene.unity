@@ -224,10 +224,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: BlueOrb
       objectReference: {fileID: 0}
+    - target: {fileID: 2056049899467923465, guid: 34969600f77e9354dae0bf8816f4a2f4,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8528595664498177332, guid: 34969600f77e9354dae0bf8816f4a2f4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.03587
+      value: 0.0039
       objectReference: {fileID: 0}
     - target: {fileID: 8528595664498177332, guid: 34969600f77e9354dae0bf8816f4a2f4,
         type: 3}
@@ -237,7 +242,7 @@ PrefabInstance:
     - target: {fileID: 8528595664498177332, guid: 34969600f77e9354dae0bf8816f4a2f4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.03587
+      value: 0.003
       objectReference: {fileID: 0}
     - target: {fileID: 8528595664498177332, guid: 34969600f77e9354dae0bf8816f4a2f4,
         type: 3}
@@ -296,7 +301,7 @@ GameObject:
   - component: {fileID: 440549676}
   - component: {fileID: 440549675}
   - component: {fileID: 440549674}
-  - component: {fileID: 440549673}
+  - component: {fileID: 440549677}
   m_Layer: 0
   m_Name: LeftElbow
   m_TagString: Untagged
@@ -304,25 +309,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &440549673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 440549672}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -2112317278, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.CylinderTargetPreview
-  mObserverBehaviour: {fileID: 440549675}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: LeftID
-  mDatasetName: Vuforia/Cylinder.xml
-  mCastedBehaviour: {fileID: 440549675}
-  mRenderer: {fileID: 0}
-  mMeshFilter: {fileID: 0}
 --- !u!114 &440549674
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -393,7 +379,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 440549673}
+  mPreview: {fileID: 440549677}
 --- !u!4 &440549676
 Transform:
   m_ObjectHideFlags: 0
@@ -410,6 +396,25 @@ Transform:
   - {fileID: 171404158}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &440549677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440549672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2112317278, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.CylinderTargetPreview
+  mObserverBehaviour: {fileID: 440549675}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: LeftID
+  mDatasetName: Vuforia/Cylinder.xml
+  mCastedBehaviour: {fileID: 440549675}
+  mRenderer: {fileID: 0}
+  mMeshFilter: {fileID: 0}
 --- !u!1 &563173329
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,7 +426,9 @@ GameObject:
   - component: {fileID: 563173333}
   - component: {fileID: 563173332}
   - component: {fileID: 563173331}
-  - component: {fileID: 563173330}
+  - component: {fileID: 563173334}
+  - component: {fileID: 563173335}
+  - component: {fileID: 563173336}
   m_Layer: 0
   m_Name: RightElbow
   m_TagString: Untagged
@@ -429,25 +436,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &563173330
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 563173329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -2112317278, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.CylinderTargetPreview
-  mObserverBehaviour: {fileID: 563173332}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: RightID
-  mDatasetName: Vuforia/Cylinder.xml
-  mCastedBehaviour: {fileID: 563173332}
-  mRenderer: {fileID: 0}
-  mMeshFilter: {fileID: 0}
 --- !u!114 &563173331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -518,7 +506,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 563173330}
+  mPreview: {fileID: 563173335}
 --- !u!4 &563173333
 Transform:
   m_ObjectHideFlags: 0
@@ -527,14 +515,68 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 563173329}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 2147151178}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &563173334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563173329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e122b9eac2121e340b5a6d23ed057fe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::OrbController
+  blueOrb: {fileID: 0}
+  redOrb: {fileID: 0}
+  threshold: 0.9
+--- !u!114 &563173335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563173329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -2112317278, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.CylinderTargetPreview
+  mObserverBehaviour: {fileID: 563173332}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: RightID
+  mDatasetName: Vuforia/Cylinder.xml
+  mCastedBehaviour: {fileID: 563173332}
+  mRenderer: {fileID: 0}
+  mMeshFilter: {fileID: 0}
+--- !u!114 &563173336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563173329}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdc300c249f4d394b8b0bcbe3933fba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JSONReader
+  JSONText: {fileID: 4900000, guid: 445f60ec01aa6d74d91adf6526cfc186, type: 3}
+  myFrameList:
+    frames: []
+  threshold: 0.6
+  frameRate: 2
+  blueOrbPrefab: {fileID: 2056049899467923465, guid: 34969600f77e9354dae0bf8816f4a2f4,
+    type: 3}
+  redOrbPrefab: {fileID: 2600896090771245090, guid: c918a63df030df54790a2b645cd76683,
+    type: 3}
 --- !u!1 &863617432
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,80 +794,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &2147151177
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 563173333}
-    m_Modifications:
-    - target: {fileID: 2600896090771245090, guid: c918a63df030df54790a2b645cd76683,
-        type: 3}
-      propertyPath: m_Name
-      value: RedOrb
-      objectReference: {fileID: 0}
-    - target: {fileID: 7929919961244744126, guid: c918a63df030df54790a2b645cd76683,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.01059
-      objectReference: {fileID: 0}
-    - target: {fileID: 7929919961244744126, guid: c918a63df030df54790a2b645cd76683,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.172
-      objectReference: {fileID: 0}
-    - target: {fileID: 7929919961244744126, guid: c918a63df030df54790a2b645cd76683,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.003
-      objectReference: {fileID: 0}
-    - target: {fileID: 7929919961244744126, guid: c918a63df030df54790a2b645cd76683,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7929919961244744126, guid: c918a63df030df54790a2b645cd76683,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7929919961244744126, guid: c918a63df030df54790a2b645cd76683,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7929919961244744126, guid: c918a63df030df54790a2b645cd76683,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7929919961244744126, guid: c918a63df030df54790a2b645cd76683,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7929919961244744126, guid: c918a63df030df54790a2b645cd76683,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7929919961244744126, guid: c918a63df030df54790a2b645cd76683,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c918a63df030df54790a2b645cd76683, type: 3}
---- !u!4 &2147151178 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7929919961244744126, guid: c918a63df030df54790a2b645cd76683,
-    type: 3}
-  m_PrefabInstance: {fileID: 2147151177}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
