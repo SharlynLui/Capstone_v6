@@ -227,7 +227,7 @@ PrefabInstance:
     - target: {fileID: 2056049899467923465, guid: 34969600f77e9354dae0bf8816f4a2f4,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8528595664498177332, guid: 34969600f77e9354dae0bf8816f4a2f4,
         type: 3}
@@ -290,6 +290,57 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 171404157}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &433677338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 433677339}
+  - component: {fileID: 433677340}
+  m_Layer: 0
+  m_Name: RightElbowReader
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &433677339
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433677338}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.05, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 563173333}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &433677340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 433677338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbcce82c7001c414b889bc203700d621, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RightElbowReader
+  JSONText: {fileID: 0}
+  myFrameList:
+    frames: []
+  threshold: 0.6
+  frameRate: 5
+  blueOrbPrefab: {fileID: 0}
+  redOrbPrefab: {fileID: 0}
 --- !u!1 &440549672
 GameObject:
   m_ObjectHideFlags: 0
@@ -302,6 +353,7 @@ GameObject:
   - component: {fileID: 440549675}
   - component: {fileID: 440549674}
   - component: {fileID: 440549677}
+  - component: {fileID: 440549678}
   m_Layer: 0
   m_Name: LeftElbow
   m_TagString: Untagged
@@ -415,6 +467,27 @@ MonoBehaviour:
   mCastedBehaviour: {fileID: 440549675}
   mRenderer: {fileID: 0}
   mMeshFilter: {fileID: 0}
+--- !u!114 &440549678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440549672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdc300c249f4d394b8b0bcbe3933fba2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::JSONReader
+  JSONText: {fileID: 4900000, guid: 445f60ec01aa6d74d91adf6526cfc186, type: 3}
+  myFrameList:
+    frames: []
+  threshold: 0.6
+  frameRate: 2
+  blueOrbPrefab: {fileID: 2056049899467923465, guid: 34969600f77e9354dae0bf8816f4a2f4,
+    type: 3}
+  redOrbPrefab: {fileID: 2600896090771245090, guid: c918a63df030df54790a2b645cd76683,
+    type: 3}
 --- !u!1 &563173329
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +499,6 @@ GameObject:
   - component: {fileID: 563173333}
   - component: {fileID: 563173332}
   - component: {fileID: 563173331}
-  - component: {fileID: 563173334}
   - component: {fileID: 563173335}
   - component: {fileID: 563173336}
   m_Layer: 0
@@ -519,24 +591,10 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 433677339}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &563173334
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 563173329}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e122b9eac2121e340b5a6d23ed057fe9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::OrbController
-  blueOrb: {fileID: 0}
-  redOrb: {fileID: 0}
-  threshold: 0.9
 --- !u!114 &563173335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -565,14 +623,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 563173329}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cdc300c249f4d394b8b0bcbe3933fba2, type: 3}
+  m_Script: {fileID: 11500000, guid: dbcce82c7001c414b889bc203700d621, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::JSONReader
+  m_EditorClassIdentifier: Assembly-CSharp::RightElbowReader
   JSONText: {fileID: 4900000, guid: 445f60ec01aa6d74d91adf6526cfc186, type: 3}
   myFrameList:
     frames: []
   threshold: 0.6
-  frameRate: 2
+  frameRate: 5
   blueOrbPrefab: {fileID: 2056049899467923465, guid: 34969600f77e9354dae0bf8816f4a2f4,
     type: 3}
   redOrbPrefab: {fileID: 2600896090771245090, guid: c918a63df030df54790a2b645cd76683,

@@ -1,8 +1,8 @@
-﻿using System.Collections; 
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JSONReader : MonoBehaviour
+public class LeftElbowReader : MonoBehaviour
 {
     public TextAsset JSONText;
 
@@ -30,7 +30,7 @@ public class JSONReader : MonoBehaviour
 
     [Header("Orb Settings")]
     public float threshold = 0.60f;
-    public float frameRate = 2.0f;
+    public float frameRate = 5.0f;
     public GameObject blueOrbPrefab;
     public GameObject redOrbPrefab;
 
@@ -82,7 +82,7 @@ public class JSONReader : MonoBehaviour
         {
             currentOrbInstance = Instantiate(prefab, transform.position, transform.rotation);
             currentOrbInstance.transform.SetParent(this.transform);
-            currentOrbInstance.transform.localPosition = new Vector3(0, 0.05f, 0);
+            currentOrbInstance.transform.localPosition = new Vector3(0, 0.2f, 0); // X: Left Right, Y: Down Up, Z: Forward Back
             currentOrbInstance.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
         }
     }
