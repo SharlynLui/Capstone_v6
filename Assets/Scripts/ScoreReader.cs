@@ -54,13 +54,19 @@ public class ScoreReader : MonoBehaviour
         int index = 0;
         while (true)
         {
-            // Pulling the 'overall' score from your JSON
             float currentScore = myFrameList.frames[index].overall;
 
+            // 1. Update the UI
             if (roundFillController != null)
             {
-                // SetValue(value, isDirectly, duringSpeed)
                 roundFillController.SetValue(currentScore, false, animationSpeed);
+            }
+
+            // 2. Tell the Environment script to check the score
+            // We use .Instance so we don't need a public variable slot
+            if (EnvironmentEffects.Instance != null)
+            {
+                EnvironmentEffects.Instance.TriggerEffect(currentScore, 0.80f);
             }
 
             index = (index + 1) % myFrameList.frames.Length;
