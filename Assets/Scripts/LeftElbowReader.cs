@@ -17,6 +17,7 @@ public class LeftElbowReader : MonoBehaviour
         public float right_knee;
         public float left_thigh;
         public float right_thigh;
+        public float overall;
     }
 
     [System.Serializable]
