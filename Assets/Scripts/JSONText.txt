@@ -1,8 +1,11 @@
 {
   "frames": [
     { "left_elbow": 0.95, "right_elbow": 0.85, "left_arm": 0.85, "right_arm": 0.80, "left_knee": 0.95, "right_knee": 0.95, "left_thigh": 0.95, "right_thigh": 0.95, "overall": 0.55},
-    { "left_elbow": 0.35, "right_elbow": 0.85, "left_arm": 0.85, "right_arm": 0.80, "left_knee": 0.95, "right_knee": 0.95, "left_thigh": 0.95, "right_thigh": 0.95, "overall": 0.55},
-    { "left_elbow": 0.35, "right_elbow": 0.25, "left_arm": 0.85, "right_arm": 0.80, "left_knee": 0.95, "right_knee": 0.95, "left_thigh": 0.95, "right_thigh": 0.95, "overall": 0.55},
-    { "left_elbow": 0.35, "right_elbow": 0.25, "left_arm": 0.45, "right_arm": 0.80, "left_knee": 0.95, "right_knee": 0.95, "left_thigh": 0.95, "right_thigh": 0.95 , "overall": 0.95}
+    { "left_elbow": 0.35, "right_elbow": 0.85, "left_arm": 0.85, "right_arm": 0.80, "left_knee": 0.95, "right_knee": 0.95, "left_thigh": 0.95, "right_thigh": 0.95, "overall": 0.65},
+    { "left_elbow": 0.35, "right_elbow": 0.25, "left_arm": 0.85, "right_arm": 0.80, "left_knee": 0.95, "right_knee": 0.95, "left_thigh": 0.95, "right_thigh": 0.95, "overall": 0.45},
+    { "left_elbow": 0.35, "right_elbow": 0.25, "left_arm": 0.45, "right_arm": 0.80, "left_knee": 0.95, "right_knee": 0.95, "left_thigh": 0.95, "right_thigh": 0.95, "overall": 0.30},
+    { "left_elbow": 0.35, "right_elbow": 0.25, "left_arm": 0.45, "right_arm": 0.20, "left_knee": 0.95, "right_knee": 0.95, "left_thigh": 0.45, "right_thigh": 0.95, "overall": 0.15},
+    { "left_elbow": 0.35, "right_elbow": 0.25, "left_arm": 0.45, "right_arm": 0.20, "left_knee": 0.95, "right_knee": 0.95, "left_thigh": 0.45, "right_thigh": 0.45, "overall": 0.95},
+    { "left_elbow": 0.35, "right_elbow": 0.25, "left_arm": 0.45, "right_arm": 0.20, "left_knee": 0.95, "right_knee": 0.95, "left_thigh": 0.45, "right_thigh": 0.45, "overall": 0.95}
    ]
 }

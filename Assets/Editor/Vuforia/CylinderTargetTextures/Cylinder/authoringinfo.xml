@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <VuforiaUnityInfo version="7.0">
     <TargetSet version="5.0" toolVersion="2.8.1">
+        <CylinderTarget name="RT" version="3.0" targetId="bc1d8933a3124f14981ee3e3c73c25db" sideLength="0.100000" topDiameter="0.086500" bottomDiameter="0.086500" sideImage="RT.Body_scaled.jpg"/>
+        <CylinderTarget name="LT" version="3.0" targetId="0396469873824ab180ab07aa445926a1" sideLength="0.100000" topDiameter="0.085000" bottomDiameter="0.085000" sideImage="LT.Body_scaled.jpg"/>
         <CylinderTarget name="LeftID" version="3.0" targetId="9cea1e4a4e2f4a9b888f517cc7f371e1" sideLength="0.100000" topDiameter="0.064000" bottomDiameter="0.064000" sideImage="LeftID.Body_scaled.jpg"/>
         <CylinderTarget name="RightID" version="3.0" targetId="53be113c7ebe4cc4b8bed0c3ee10d37c" sideLength="0.100000" topDiameter="0.064000" bottomDiameter="0.064000" sideImage="RightID.Body_scaled.jpg"/>
     </TargetSet>

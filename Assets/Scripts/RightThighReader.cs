@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LeftElbowReader : MonoBehaviour
+public class RightThighReader : MonoBehaviour
 {
     public TextAsset JSONText;
 
@@ -23,7 +23,6 @@ public class LeftElbowReader : MonoBehaviour
     [System.Serializable]
     public class FrameList
     {
-        // Important: This name must match the key in your JSON file (e.g., "frames")
         public FrameData[] frames;
     }
 
@@ -42,7 +41,7 @@ public class LeftElbowReader : MonoBehaviour
     {
         if (JSONText != null)
         {
-            // Convert the JSON text into your C# object list
+            // Convert the JSON text into C# object list
             myFrameList = JsonUtility.FromJson<FrameList>(JSONText.text);
 
             if (myFrameList.frames != null && myFrameList.frames.Length > 0)
@@ -60,7 +59,8 @@ public class LeftElbowReader : MonoBehaviour
             FrameData current = myFrameList.frames[index];
 
             // Logic: 1 = Good (Blue), 2 = Bad (Red)
-            int statusNeeded = (current.left_elbow >= threshold) ? 1 : 2;
+            // CHANGE HERE FOR EACH SCRIPT FOR EACH PART
+            int statusNeeded = (current.right_thigh >= threshold) ? 1 : 2;
 
             if (statusNeeded != lastStatus)
             {
