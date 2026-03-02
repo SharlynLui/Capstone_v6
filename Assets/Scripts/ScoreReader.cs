@@ -11,7 +11,7 @@ public class ScoreReader : MonoBehaviour
     public ImgsFillDynamic roundFillController;
 
     [Header("Settings")]
-    public float frameRate = 2.0f;
+    public float frameRate = 5.0f;
     public float animationSpeed = 1.0f;
 
     [System.Serializable]
@@ -25,7 +25,7 @@ public class ScoreReader : MonoBehaviour
         public float right_knee;
         public float left_thigh;
         public float right_thigh;
-        public float overall; // Added based on your JSON needs
+        public float overall;
     }
 
     [System.Serializable]
@@ -56,14 +56,13 @@ public class ScoreReader : MonoBehaviour
         {
             float currentScore = myFrameList.frames[index].overall;
 
-            // 1. Update the UI
+            // Update the progress bar
             if (roundFillController != null)
             {
                 roundFillController.SetValue(currentScore, false, animationSpeed);
             }
 
-            // 2. Tell the Environment script to check the score
-            // We use .Instance so we don't need a public variable slot
+            // The Environment script triggered by this script
             if (EnvironmentEffects.Instance != null)
             {
                 EnvironmentEffects.Instance.TriggerEffect(currentScore, 0.80f);

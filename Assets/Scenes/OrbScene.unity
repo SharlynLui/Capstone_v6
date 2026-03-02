@@ -261,7 +261,7 @@ MonoBehaviour:
   myFrameList:
     frames: []
   threshold: 0.6
-  frameRate: 2
+  frameRate: 5
   blueOrbPrefab: {fileID: 2056049899467923465, guid: 34969600f77e9354dae0bf8816f4a2f4,
     type: 3}
   redOrbPrefab: {fileID: 2600896090771245090, guid: c918a63df030df54790a2b645cd76683,
@@ -1064,7 +1064,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ScoreReader
   JSONText: {fileID: 4900000, guid: 445f60ec01aa6d74d91adf6526cfc186, type: 3}
   roundFillController: {fileID: 1530466152}
-  frameRate: 2
+  frameRate: 5
   animationSpeed: 1
   myFrameList:
     frames: []
